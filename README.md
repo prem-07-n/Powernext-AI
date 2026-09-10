@@ -6,4 +6,4 @@ Team Members :-
 3.Tharun Kumar Varma Chekuri
 4.Sreeneer Reddy Vellanki
 5.Mabbu Subbarayappa Yuvakarthik
-This are our screening task  for selecting for the Power next ai Hackathon.
+This is are our screening task  for selecting for the Power next ai Hackathon.
