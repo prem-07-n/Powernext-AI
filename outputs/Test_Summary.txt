@@ -1,0 +1,20 @@
+AUTOMATED TEST SUMMARY
+========================================
+Team: Astra Watt
+Generated: 2026-09-10 14:03:12
+
+Number of records analysed: 350
+Number of abnormal/invalid records identified: 37
+
+Predicted Reference_Parameter:
+  Minimum: 13.4136
+  Maximum: 55.1154
+  Average: 26.3201
+
+Test IDs requiring the highest attention:
+  - TST-0290
+  - TST-0142
+  - TST-0258
+
+Approach (93 words):
+Our pipeline first cleans the raw sensor data by removing duplicate measurements, flagging physically impossible or statistically outlying sensor readings, and imputing missing values using training-set medians to avoid leakage. We then engineer candidate features (power, squared terms, sensor differences and aggregates) and keep only those that measurably improve cross-validated performance. Two models are trained: a regressor predicting Reference_Parameter and a classifier predicting Valid/Invalid records, each chosen from several candidate algorithms by cross-validation. The best models are applied to the test set to generate predictions, flag abnormal records, and produce this automated summary.

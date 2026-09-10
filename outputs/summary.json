@@ -1,0 +1,262 @@
+{
+  "team_name": "Astra Watt",
+  "generated_at": "2026-09-10 14:03:12",
+  "runtime_seconds": 102.9,
+  "data": {
+    "raw_training_shape": [
+      1000,
+      11
+    ],
+    "raw_test_shape": [
+      350,
+      9
+    ],
+    "cleaned_test_rows_predicted": 350
+  },
+  "feature_engineering": {
+    "baseline_classifier_f1_invalid": 0.7127,
+    "baseline_regressor_r2": 0.9801,
+    "baseline_regressor_mae": 0.7588,
+    "candidate_deltas": [
+      {
+        "feature": "S1_S2",
+        "delta_F1": 0.1065,
+        "delta_R2": 0.0,
+        "delta_MAE": -0.0016
+      },
+      {
+        "feature": "Sensor_min",
+        "delta_F1": 0.0411,
+        "delta_R2": -0.0,
+        "delta_MAE": -0.0014
+      },
+      {
+        "feature": "Sensor_max",
+        "delta_F1": -0.0065,
+        "delta_R2": -0.0,
+        "delta_MAE": 0.0002
+      },
+      {
+        "feature": "V2",
+        "delta_F1": -0.0077,
+        "delta_R2": -0.0,
+        "delta_MAE": 0.0003
+      },
+      {
+        "feature": "VxI",
+        "delta_F1": -0.0055,
+        "delta_R2": -0.0,
+        "delta_MAE": 0.0003
+      },
+      {
+        "feature": "S2_S3",
+        "delta_F1": 0.076,
+        "delta_R2": -0.0,
+        "delta_MAE": 0.0017
+      },
+      {
+        "feature": "I2",
+        "delta_F1": -0.0051,
+        "delta_R2": -0.0,
+        "delta_MAE": 0.0007
+      },
+      {
+        "feature": "S1_S3",
+        "delta_F1": 0.1049,
+        "delta_R2": -0.0,
+        "delta_MAE": -0.0005
+      },
+      {
+        "feature": "Sensor_avg",
+        "delta_F1": -0.0083,
+        "delta_R2": -0.0001,
+        "delta_MAE": 0.0021
+      },
+      {
+        "feature": "IxDur",
+        "delta_F1": -0.0144,
+        "delta_R2": -0.0001,
+        "delta_MAE": 0.0079
+      }
+    ],
+    "kept_for_regressor": [],
+    "kept_for_classifier": [
+      "S1_S2",
+      "Sensor_min",
+      "S2_S3",
+      "S1_S3"
+    ]
+  },
+  "reference_parameter_model": {
+    "best_model": "Extra Trees",
+    "validation_mae": 0.7375,
+    "validation_rmse": 1.6099,
+    "model_comparison": {
+      "Linear Regression": {
+        "MAE": 3.4284,
+        "RMSE": 4.1287
+      },
+      "Random Forest": {
+        "MAE": 0.8567,
+        "RMSE": 1.6742
+      },
+      "Extra Trees": {
+        "MAE": 0.7375,
+        "RMSE": 1.6099
+      },
+      "Gradient Boosting": {
+        "MAE": 0.7656,
+        "RMSE": 1.4334
+      },
+      "HistGradientBoosting": {
+        "MAE": 0.8225,
+        "RMSE": 1.5578
+      }
+    },
+    "top_features": [
+      {
+        "feature": "Load_Current_A",
+        "importance": 1.1741
+      },
+      {
+        "feature": "Power_kW",
+        "importance": 0.0676
+      },
+      {
+        "feature": "Ambient_Temperature_C",
+        "importance": 0.0639
+      },
+      {
+        "feature": "Sensor_S2",
+        "importance": 0.0101
+      },
+      {
+        "feature": "Applied_Voltage_kV",
+        "importance": 0.0047
+      },
+      {
+        "feature": "Sensor_S3",
+        "importance": 0.0037
+      },
+      {
+        "feature": "Sensor_S1",
+        "importance": 0.0027
+      },
+      {
+        "feature": "Test_Duration_min",
+        "importance": 0.0008
+      },
+      {
+        "feature": "Sensor_S4",
+        "importance": 0.0004
+      },
+      {
+        "feature": "Sensor_S4_was_missing",
+        "importance": 0.0002
+      }
+    ]
+  },
+  "validity_model": {
+    "best_model": "Random Forest",
+    "f1_invalid": 0.9091,
+    "model_comparison": {
+      "Logistic Regression": {
+        "precision_invalid": 1.0,
+        "recall_invalid": 0.7083,
+        "f1_invalid": 0.8293,
+        "f1_macro": 0.9048
+      },
+      "Random Forest": {
+        "precision_invalid": 1.0,
+        "recall_invalid": 0.8333,
+        "f1_invalid": 0.9091,
+        "f1_macro": 0.9489
+      },
+      "Extra Trees": {
+        "precision_invalid": 1.0,
+        "recall_invalid": 0.7917,
+        "f1_invalid": 0.8837,
+        "f1_macro": 0.9348
+      },
+      "Gradient Boosting": {
+        "precision_invalid": 1.0,
+        "recall_invalid": 0.75,
+        "f1_invalid": 0.8571,
+        "f1_macro": 0.9201
+      }
+    },
+    "top_features": [
+      {
+        "feature": "S1_S3",
+        "importance": 0.2053
+      },
+      {
+        "feature": "S1_S2",
+        "importance": 0.1998
+      },
+      {
+        "feature": "S2_S3",
+        "importance": 0.1322
+      },
+      {
+        "feature": "Sensor_min",
+        "importance": 0.0709
+      },
+      {
+        "feature": "Sensor_S2",
+        "importance": 0.0523
+      },
+      {
+        "feature": "Sensor_S1",
+        "importance": 0.0507
+      },
+      {
+        "feature": "Sensor_S3",
+        "importance": 0.0443
+      },
+      {
+        "feature": "Applied_Voltage_kV",
+        "importance": 0.0272
+      },
+      {
+        "feature": "Test_Duration_min",
+        "importance": 0.0269
+      },
+      {
+        "feature": "Sensor_S4",
+        "importance": 0.0256
+      }
+    ]
+  },
+  "predictions": {
+    "validity_distribution": {
+      "Valid": 313,
+      "Invalid": 37
+    },
+    "reference_parameter_mean": 26.3201,
+    "reference_parameter_std": 10.0324
+  },
+  "task03_test_summary": {
+    "team_name": "Astra Watt",
+    "generated_at": "2026-09-10 14:03:12",
+    "records_analysed": 350,
+    "abnormal_invalid_records": 37,
+    "reference_parameter_predicted": {
+      "min": 13.4136,
+      "max": 55.1154,
+      "average": 26.3201
+    },
+    "test_ids_requiring_highest_attention": [
+      "TST-0290",
+      "TST-0142",
+      "TST-0258"
+    ],
+    "approach_explanation": "Our pipeline first cleans the raw sensor data by removing duplicate measurements, flagging physically impossible or statistically outlying sensor readings, and imputing missing values using training-set medians to avoid leakage. We then engineer candidate features (power, squared terms, sensor differences and aggregates) and keep only those that measurably improve cross-validated performance. Two models are trained: a regressor predicting Reference_Parameter and a classifier predicting Valid/Invalid records, each chosen from several candidate algorithms by cross-validation. The best models are applied to the test set to generate predictions, flag abnormal records, and produce this automated summary.",
+    "approach_explanation_word_count": 93
+  },
+  "outputs": {
+    "submission_csv": "outputs\\Astra Watt.csv",
+    "task03_summary_json": "outputs\\Test_Summary.json",
+    "task03_summary_txt": "outputs\\Test_Summary.txt"
+  }
+}
